@@ -1,0 +1,43 @@
+.marginlaterales {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.imagenComentario {
+  width: 80%;
+  max-width: 150px;
+}
+header {
+  background-color: rgb(254, 200, 154);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(254, 200, 154);
+  margin-top: 40px;
+}
+.botonCompra {
+  background-color: rgb(254, 200, 154);
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+.footer__img {
+  width: 30px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.imgContacto {
+  width: 100%;
+  max-width: 300px;
+}
