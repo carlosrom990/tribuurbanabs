@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .marginlaterales {
   margin-left: 5px;
   margin-right: 5px;
@@ -92,8 +95,12 @@ footer h3 {
 }
 /* ----------------------talles y medidas--------------------------- */
 .tym__tabla {
+  width: 90%;
   max-width: 400px;
-  display: inline-block;
+}
+.mainTym {
+  margin: 0%;
+  padding: 0%;
 }
 
 /* -------------------------preguntas frecuentes----------------------- */
@@ -103,8 +110,7 @@ footer h3 {
 }
 .containerPf {
   display: grid;
-  grid-template-columns: 10% 90%;
-  gap: 5px;
+  grid-template-columns: 10% 85%;
 }
 /* ------------------------------------------------------------media--------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
