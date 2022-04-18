@@ -60,13 +60,18 @@ footer h3 {
 }
 /* -----------------------catalogo-------------- */
 .tamaño-carrusel {
-  width: 80%;
-  max-width: 300px;
+  width: 100%;
+
   display: inline-block;
   padding-left: 30px;
 }
 .carruselCata {
   display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+.imgCatalogo {
+  width: 100%;
 }
 .cata__list {
   list-style: none;
@@ -85,7 +90,22 @@ footer h3 {
   color: black;
   font-weight: bold;
 }
+/* ----------------------talles y medidas--------------------------- */
+.tym__tabla {
+  max-width: 400px;
+  display: inline-block;
+}
 
+/* -------------------------preguntas frecuentes----------------------- */
+.img__pf {
+  width: 100%;
+  max-width: 100px;
+}
+.containerPf {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 5px;
+}
 /* ------------------------------------------------------------media--------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .bannerDos {
