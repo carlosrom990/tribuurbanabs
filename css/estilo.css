@@ -5,7 +5,8 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-.titulosGenerales {
+h1 {
+  text-transform: uppercase;
 }
 /* -------------------------header-------------------- */
 header {
@@ -24,19 +25,59 @@ footer {
   font-weight: bold;
   background-color: rgb(254, 200, 154);
   margin-top: 40px;
+  justify-items: center;
 }
 
 footer h3 {
   margin-bottom: 20px;
 }
-.footer__img {
-  width: 30px;
-}
-.footer__list {
+
+.footer__iconos {
   display: flex;
-  justify-content: space-around;
-  list-style: none;
+  align-items: center;
+  justify-content: center;
 }
+
+.footer__iconos ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.footer__iconos ul li a {
+  display: block;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.342);
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgb(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.footer__iconos ul:hover a {
+  filter: blur(2px);
+}
+
+.footer__iconos ul li a:hover {
+  transform: translateY(-3px) scale(1.5);
+  filter: none;
+}
+.face:hover {
+  background-color: #3b5999;
+}
+.insta:hover {
+  background-color: #e4405f;
+}
+.tiktok:hover {
+  background-image: linear-gradient(#25f4ee, #fe2c55);
+}
+.whats:hover {
+  background-color: #47c856;
+}
+
 /* -----------------------index---------------- */
 .bannerDos {
   display: none;
@@ -61,6 +102,9 @@ footer h3 {
 .imgCatalogo {
   width: 100%;
   max-width: 250px;
+}
+.main__contacto {
+  height: 70vh;
 }
 /* -----------------------catalogo-------------- */
 .tamaño-carrusel {
