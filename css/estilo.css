@@ -8,6 +8,7 @@
 h1 {
   text-transform: uppercase;
 }
+
 /* -------------------------header-------------------- */
 header {
   background-color: rgb(254, 200, 154);
@@ -157,6 +158,33 @@ footer h3 {
   display: grid;
   grid-template-columns: 10% 85%;
 }
+/* -------------------------transicion------------------ */
+:root {
+  --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.nombretransiocion {
+  display: inline-block;
+  align-items: flex-start;
+  position: relative;
+  padding: 1rem;
+}
+.nombretransiocion::before {
+  content: "";
+  display: block;
+  background-color: rgb(254, 200, 154);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  clip-path: var(--clippy);
+  transition: clip-path 1s;
+}
+.nombretransiocion:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 /* ------------------------------------------------------------media--------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .bannerDos {
